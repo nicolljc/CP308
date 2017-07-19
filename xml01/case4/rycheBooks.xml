@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/css" href="rycheBooks.css" media="screen" ?>
+<?xml-stylesheet type="text/css" href="rycheBooksPrint.css" media="print" ?>
+<!--
+   New Perspectives on XML
+   Tutorial 1
+   Case Problem 4
+   
+   Ryche Books
+
+   Filename:	rycheBooks.xml
+   Author: 		Jesse Nicoll
+   Date:   		7/19/2017
+-->
+<books xmlns="http://example.com/rychebooks/books">
+	<book ISBN="I0141382902">
+		<title>The Titan's Curse </title>
+		<author>Rick Riordan</author>
+		<type>Softcover</type>
+		<publisher>Penguin Books</publisher>
+		<sellPrice>7.95</sellPrice>
+		<categories>
+			<category>children</category>
+			<category>teens</category>
+			<category>top-seller</category>
+			<category>fiction</category>
+			<category>adventure</category>
+		</categories>
+	</book>
+	<book ISBN="I0545060397">
+		<title>The Maze of Bones</title>
+		<author>Rick Riordan</author>
+		<type>Hardcover</type>
+		<publisher>Scholastic</publisher>
+		<sellPrice>10.95</sellPrice>
+		<categories>
+			<category>children</category>
+			<category>teens</category>
+			<category>top-seller</category>
+			<category>fiction</category>
+			<category>adventure</category>
+		</categories>
+	</book>
+	<book ISBN="I0439306183">
+		<title>100 Words Kids Need to Read by 3rd Grade</title>
+		<author>Scholastic</author>
+		<type>Softcover</type>
+		<publisher>Scholastic</publisher>
+		<sellPrice>5.95</sellPrice>
+		<categories>
+			<category>children</category>
+			<category>non-fiction</category>
+			<category>educational</category>
+		</categories>
+	</book>
+	<book ISBN="I9780545010221">
+		<title>Harry Potter and the Deathly Hallows (Harry Potter #7)</title>
+		<author>J.K. Rowling</author>
+		<type>Hardcover</type>
+		<publisher>Bloomsbury Publishing</publisher>
+		<sellPrice>12.95</sellPrice>
+		<categories>
+			<category>children</category>
+			<category>teens</category>
+			<category>adult</category>
+			<category>top-seller</category>
+			<category>fiction</category>
+			<category>adventure</category>
+		</categories>
+	</book>
+</books>
