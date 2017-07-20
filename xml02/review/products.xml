@@ -21,7 +21,7 @@
 	<!ATTLIST name category (historical | state | parks) #REQUIRED>
 	
 	<!ELEMENT versionDate (#PCDATA)>
-    <!ATTLIST versionDate surveyDate CDATA #FIXED "1849">
+    <!ATTLIST versionDate surveyDate CDATA #IMPLIED>
 	
 	<!ELEMENT desc (#PCDATA)>
 	<!ELEMENT isbn (#PCDATA)>
