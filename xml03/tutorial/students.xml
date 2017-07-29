@@ -19,7 +19,7 @@
       <firstName>Cynthia</firstName>
       <dateOfEnrollment>2017-05-22</dateOfEnrollment>
       <credits>12</credits>
-      <gpa degree="MP">3.81</gpa>
+      <gpa degree="MPA">3.81</gpa>
    </student>
 
    <student stuID="SI771-121-10">
