@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+   New Perspectives on XML
+   Tutorial 3
+   Review Assignments
+
+   Austin Technical College information technology student list
+   Author: 		Jesse Nicoll
+   Date:     	7/28/2017
+
+   Filename:          degrees.xsd
+   Supporting Files:  degrees.xml
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element ref="title" type="xs:string" />
+	<xs:element ref="approvalDate" type="xs:date" />
+	<xs:element ref="effectiveDate" type="xs:date" />
+	<xs:element ref="summary" type="xs:string" />
+	<xs:element ref="coordinator" type="xs:string" />
+	<xs:element ref="comment" type="xs:string" />
+	<xs:attribute ref="degree" type="degreeID" />
+	<xs:attribute ref="degree" type="degreeCode" />
+	<xs:attribute ref="comment" type="xs:date" />
+
+	<xs:simpleType name="idType">
+		<xs:restriction base="xs:ID">
+			<xs:pattern value="IT\d{2}-\d{3}-\d{3}" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="degrees">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="degree" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="degree">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="title" />
+				<xs:element ref="approvalDate" />
+				<xs:element ref="effectiveDate"  />
+				<xs:element ref="summary" />
+				<xs:element ref="coordinator" />
+				<xs:element ref="comment" use="optional" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="comment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="date" use="required" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
