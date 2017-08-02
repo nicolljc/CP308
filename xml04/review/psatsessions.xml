@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--
+   New Perspectives on XML
+   Tutorial 4
+   Review Assignments
+
+   Higher Ed Test Prep PSAT writing skills course
+   Author:  	Jesse Nicoll
+   Date:     	8/2/2017
+
+   Filename:         psatsessions.xml
+   Supporting Files: course.css, course.xsd, sessions.css, sessions.xsd
+-->
+<?xml-stylesheet type="text/css" href="course.css" ?>
+<?xml-stylesheet type="text/css" href="sessions.css" ?>
+
+<crs:course courseID="PSAT-070-3"      
+        xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:crs="http://example.com/higheredtestprep/course/ns"
+		xmlns:ses="http://example.com/higheredtestprep/sessions/ns"
+		xs:schemaLocation="http://example.com/higheredtestprep/course/ns course.xsd" >
+
+   <crs:name>
+      <crs:title>PSAT Writing Skills Course</crs:title>
+      <crs:session>3</crs:session>
+   </crs:name>
+   <crs:description>
+      This is a focused course for students who have
+      previously taken the PSAT exam as a sophomore but
+      did not receive a desired score on the writing skills 
+      portion or students who will be taking the PSAT and 
+      wish to strengthen their skills in the writing skills 
+      area. Outcomes of the course will be measured using 
+      the original PSAT writing skills score or the course 
+      pre-test compared to both the subsequent PSAT 
+      writing skills score and a course post-test.
+   </crs:description>
+   
+	<ses:sessions>
+      <ses:session>
+      	 <ses:sessNum>1</ses:sessNum>
+         <ses:description>How to identify sentence errors</ses:description>
+      </ses:session>
+      <ses:session>
+      	 <ses:sessNum>2</ses:sessNum>
+         <ses:description>Advanced identification of sentence errors</ses:description>
+      </ses:session>
+      <ses:session>
+      	 <ses:sessNum>3</ses:sessNum>
+         <ses:description>How to improve sentences</ses:description>
+      </ses:session>
+      <ses:session>
+      	 <ses:sessNum>4</ses:sessNum>
+         <ses:description>Advanced sentence improvement</ses:description>
+      </ses:session>
+      <ses:session>
+      	 <ses:sessNum>5</ses:sessNum>
+         <ses:description>How to improve paragraphs</ses:description>
+      </ses:session>
+      <ses:session>
+      	 <ses:sessNum>6</ses:sessNum>
+         <ses:description>Advanced paragraph improvement</ses:description>
+      </ses:session>
+      <ses:session>
+      	 <ses:sessNum>7</ses:sessNum>
+         <ses:description>Combining Skills I</ses:description>
+      </ses:session>
+      <ses:session>
+      	 <ses:sessNum>8</ses:sessNum>
+         <ses:description>Combining Skills II</ses:description>
+      </ses:session>
+	  
+   </ses:sessions>
+   
+</crs:course>
